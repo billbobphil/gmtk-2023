@@ -10,6 +10,9 @@ namespace Movement
         //Could be improved by recording each key on down into a list, then when that key is let go, remove from list,
         //when a player lets go of the current key, get the next item in the keys down array until nothing remains
         //gamejam though, time to move on
+        
+        //TODO: Movement is feeling a bit unresponsive, may need tweaks.
+            //If you press a single key and let it go within the time-window for the movement your movement won't be captured.
         [SerializeField] private MoveOverworldObject _moveOverworldObject;
         private Vector2 _directionLastPressed;
         private int _numberOfKeysPressed;
@@ -21,14 +24,6 @@ namespace Movement
         
         private void Awake()
         {
-            // _keysToCheck = new List<KeyCode>
-            // {
-            //     KeyCode.A,
-            //     KeyCode.D,
-            //     KeyCode.W,
-            //     KeyCode.S
-            // };
-
             _keysToCheck = new List<KeyCode>();
             
             _keysToCheck.AddRange(rightMovementKeyCodes);
