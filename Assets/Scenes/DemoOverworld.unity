@@ -342,7 +342,6 @@ GameObject:
   - component: {fileID: 517595051}
   - component: {fileID: 517595050}
   - component: {fileID: 517595049}
-  - component: {fileID: 517595048}
   - component: {fileID: 517595053}
   m_Layer: 0
   m_Name: SampleInteractable (1)
@@ -351,41 +350,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!58 &517595048
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 517595047}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!50 &517595049
 Rigidbody2D:
   serializedVersion: 4
@@ -921,7 +885,6 @@ GameObject:
   - component: {fileID: 1143483175}
   - component: {fileID: 1143483174}
   - component: {fileID: 1143483173}
-  - component: {fileID: 1143483172}
   - component: {fileID: 1143483171}
   - component: {fileID: 1143483170}
   m_Layer: 0
@@ -976,41 +939,6 @@ CircleCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
---- !u!58 &1143483172
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143483169}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1122,7 +1050,6 @@ GameObject:
   - component: {fileID: 1527465680}
   - component: {fileID: 1527465682}
   - component: {fileID: 1527465684}
-  - component: {fileID: 1527465683}
   - component: {fileID: 1527465685}
   m_Layer: 0
   m_Name: SampleInteractable
@@ -1211,41 +1138,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   somethingUnique: Thing 1
---- !u!58 &1527465683
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1527465679}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!50 &1527465684
 Rigidbody2D:
   serializedVersion: 4
@@ -1316,9 +1208,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4914995874841702105, guid: 85ba5a4ce8dc2904a9d96fb8b5bc1154, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 960
+      objectReference: {fileID: 0}
+    - target: {fileID: 4914995874841702105, guid: 85ba5a4ce8dc2904a9d96fb8b5bc1154, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 540
+      objectReference: {fileID: 0}
     - target: {fileID: 6934248326806556988, guid: 85ba5a4ce8dc2904a9d96fb8b5bc1154, type: 3}
       propertyPath: m_Name
       value: CircleWipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 7359109088167893980, guid: 85ba5a4ce8dc2904a9d96fb8b5bc1154, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1300
+      objectReference: {fileID: 0}
+    - target: {fileID: 7359109088167893980, guid: 85ba5a4ce8dc2904a9d96fb8b5bc1154, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1300
+      objectReference: {fileID: 0}
+    - target: {fileID: 7359109088167893980, guid: 85ba5a4ce8dc2904a9d96fb8b5bc1154, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1124
       objectReference: {fileID: 0}
     - target: {fileID: 7922525598390685494, guid: 85ba5a4ce8dc2904a9d96fb8b5bc1154, type: 3}
       propertyPath: m_RootOrder
