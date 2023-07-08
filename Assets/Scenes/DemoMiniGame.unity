@@ -336,6 +336,14 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6502207354257051809, guid: 65bad692868cecd4d904490519270fe2, type: 3}
+      propertyPath: interactionKeyCodes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6502207354257051809, guid: 65bad692868cecd4d904490519270fe2, type: 3}
+      propertyPath: interactionKeyCodes.Array.data[0]
+      value: 102
+      objectReference: {fileID: 0}
     - target: {fileID: 6903623599250563780, guid: 65bad692868cecd4d904490519270fe2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.9
