@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Interactions
@@ -17,6 +18,11 @@ namespace Interactions
         protected void EnableInteractions()
         {
             _isInteracting = false;
+        }
+
+        protected bool checkKeys()
+        {
+            return interactionKeyCodes.Any(code => Input.GetKeyDown(code));
         }
         
     }
