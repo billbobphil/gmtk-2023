@@ -1,10 +1,11 @@
 using System;
+using Minigame;
 using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Movement
 {
-    public class MoveOnPath : MonoBehaviour
+    public class MoveOnPath : MonoBehaviour, IResetable
     {
         public EditorPath editorPath;
         public int currentWayPointID = 0;
@@ -12,14 +13,9 @@ namespace Movement
         public float speed;
         public float reachDistance = 1.0f;
 
-        private Vector3 _lastPosition;
         private Vector3 _currentPosition;
         public bool loop = true;
         private bool goingForward = true;
-        private void Start()
-        {
-            _lastPosition = transform.position;
-        }
 
         private void Update()
         {
@@ -55,6 +51,12 @@ namespace Movement
                     }
                 }
             }
+        }
+
+        public void ResetObject()
+        {
+            currentWayPointID = 0;
+            goingForward = true;
         }
     }
 }
