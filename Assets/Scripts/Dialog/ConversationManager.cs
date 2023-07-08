@@ -18,6 +18,11 @@ namespace Dialog
         [SerializeField] private TextMeshProUGUI playerText;
         [SerializeField] private TextMeshProUGUI otherText;
 
+        private void Awake()
+        {
+            conversationCanvas.SetActive(false);
+        }
+        
         public void SetConversation(Conversation conversation)
         {
             currentConversation = conversation;
