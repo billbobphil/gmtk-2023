@@ -55,7 +55,11 @@ namespace Interactions
 
         private void FindClosestTarget()
         {
-            if (InteractablesWithinRange.Count == 0) return;
+            if (InteractablesWithinRange.Count == 0)
+            {
+                _closestInteractableWithinRange = null;
+                return;
+            }
 
             int indexOfClosestTarget = 0;
             float closestDistanceSqr = Mathf.Infinity;
@@ -78,8 +82,11 @@ namespace Interactions
                 if (i == indexOfClosestTarget)
                 {
                     Interactable closestInteractable = InteractablesWithinRange[i];
-                    closestInteractable.MarkAsCurrentInteractable();
-                    _closestInteractableWithinRange = closestInteractable;
+                    if (_closestInteractableWithinRange != closestInteractable)
+                    {
+                        closestInteractable.MarkAsCurrentInteractable();
+                        _closestInteractableWithinRange = closestInteractable;
+                    }
                 }
                 else
                 {
