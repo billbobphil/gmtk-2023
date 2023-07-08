@@ -6,21 +6,34 @@ using UnityEngine;
 
 namespace Minigame
 {
-    public class Fireable : InteractionController
+    public class Fireable : InteractionController, IResetable
     {
         public float speed = 5f;
         public Rigidbody2D rigidbody2d;
         public List<MonoBehaviour> disableList = new List<MonoBehaviour>();
+        private Renderer renderer;
+        private Vector2 originalPosition;
+        private void Awake()
+        {
+            renderer = GetComponent<Renderer>();
+            originalPosition = new Vector2(transform.position.x, transform.position.y);
+        }
+
         private void Update()
         {
             if (checkKeys())
             {
                 Fire();
             }
+            
+            if(!renderer.isVisible)
+            {
+                ResetObject();
+            }
         }
         protected void Fire()
         {
-            DisableObjects();
+            ToggleObject(false);
             Vector3 mousePos = Input.mousePosition;
             Vector3 objectPos = Camera.main.WorldToScreenPoint (transform.position);
             mousePos.x = mousePos.x - objectPos.x;
@@ -28,12 +41,27 @@ namespace Minigame
             Vector2 pos = new Vector2(mousePos.x, mousePos.y);
             rigidbody2d.velocity = speed * 0.01f * pos;
         }
-        protected void DisableObjects()
+        protected void ToggleObject(bool state)
         {
-            foreach (MonoBehaviour toDisable in disableList)
+            foreach (MonoBehaviour script in disableList)
             {
-                toDisable.enabled = false;
+                script.enabled = state;
             }
+        }
+
+        public void ResetObject()
+        {
+            rigidbody2d.velocity = new Vector2(0f, 0f);
+            transform.position = new Vector2(originalPosition.x, originalPosition.y);
+            foreach (MonoBehaviour script in disableList)
+            {
+                if (script is IResetable)
+                {
+                    IResetable resetable = script as IResetable;
+                    resetable.ResetObject();
+                }
+            }
+            ToggleObject(true);
         }
     }
 }
