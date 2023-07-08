@@ -1,19 +1,21 @@
 using UnityEngine;
 using System.Linq;
+using Interactions;
 using Unity.VisualScripting;
 
-namespace Interactions
+
+namespace Minigame
 {
     public class Triggerable : InteractionController
     {
         public int resetTimeSeconds = 3;
         private void Update()
         {
-            if(!_isInteracting && interactionKeyCodes.Any(code => Input.GetKeyDown(code)))
+            if(!_isInteracting && checkKeys())
             {
                 if (_isTriggered)
                 {
-                    Debug.Log("HIT!");
+                    Trigger();
                 }
                 else
                 {
@@ -22,6 +24,11 @@ namespace Interactions
                 PreventInteractions();
                 Invoke("EnableInteractions", resetTimeSeconds); //TO-DO if I have time
             }
+        }
+
+        protected virtual void Trigger()
+        {
+            Debug.Log("Hit!");
         }
 
         private bool _isTriggered = false;
