@@ -16,8 +16,15 @@ namespace Util
         
         private void Awake()
         {
-            instance = this;
-            DontDestroyOnLoad(this.gameObject);
+            if (instance)
+            {
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                instance = this;
+                DontDestroyOnLoad(this.gameObject);    
+            }
         }
     }
 }
