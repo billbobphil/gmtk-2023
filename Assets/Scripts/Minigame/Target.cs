@@ -12,6 +12,7 @@ namespace Minigame
         public int health = 1;
         private int currentHealth;
         [SerializeField] private HealthBar healthBar;
+        public AudioSource audioSource;
 
         private void Awake()
         {
@@ -26,6 +27,7 @@ namespace Minigame
                 Fireable wave = other.GetComponent<Fireable>();
                 int damage = wave.damage.GetDamage();
                 currentHealth -= damage;
+                audioSource.Play();
                 wave.ResetObject();
                 healthBar.UpdateHealthBar(health, currentHealth);
                 if (currentHealth <= 0)
