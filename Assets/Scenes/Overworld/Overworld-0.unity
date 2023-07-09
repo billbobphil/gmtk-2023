@@ -594,6 +594,10 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7373783258324000776, guid: 27a5b6151523d654c8b8a801b48bf4f6, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

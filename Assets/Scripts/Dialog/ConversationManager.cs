@@ -21,6 +21,7 @@ namespace Dialog
         [SerializeField] private TextMeshProUGUI playerNameText;
         [SerializeField] private TextMeshProUGUI otherNameText;
         [SerializeField] private Image otherPortrait;
+        public AudioSource audiosource;
 
         private void Awake()
         {
@@ -68,7 +69,7 @@ namespace Dialog
         private void DisplayConversationStep()
         {
             Dialog currentStep = currentConversation.GetConversationSequence()[conversationIndex];
-
+            audiosource.Play();
             if (currentStep.GetActor() == DialogActors.Player)
             {
                 playerDialogBox.SetActive(true);
