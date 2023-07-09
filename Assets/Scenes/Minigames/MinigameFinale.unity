@@ -1760,6 +1760,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6838953451917127778, guid: 76a492e274798664b99597ba4024005f, type: 3}
+      propertyPath: sceneName
+      value: Overworld-4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838953451917127778, guid: 76a492e274798664b99597ba4024005f, type: 3}
       propertyPath: transition
       value: 
       objectReference: {fileID: 859209027}
