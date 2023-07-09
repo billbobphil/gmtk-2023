@@ -15,7 +15,16 @@ namespace Movement
 
         private Vector3 _currentPosition;
         public bool loop = true;
-        private bool goingForward = true;
+        public bool goingForward = true;
+        private Vector2 startingPosition;
+        private int startingWaypointID = 0;
+        private bool startingForward;
+        private void Awake()
+        {
+            startingPosition = new Vector2(transform.position.x, transform.position.y);
+            startingWaypointID = currentWayPointID;
+            startingForward = goingForward;
+        }
 
         private void Update()
         {
@@ -50,13 +59,24 @@ namespace Movement
                         currentWayPointID++;
                     }
                 }
+                else
+                {
+                    if (currentWayPointID >= editorPath.paths.Count)
+                    {
+                        currentWayPointID = 0;
+                    } else if (currentWayPointID < 0)
+                    {
+                        currentWayPointID = editorPath.paths.Count - 1;
+                    }
+                }
             }
         }
 
         public void ResetObject()
         {
-            currentWayPointID = 0;
-            goingForward = true;
+            currentWayPointID = startingWaypointID;
+            goingForward = startingForward;
+            transform.position = new Vector3(startingPosition.x, startingPosition.y, 0f);
         }
     }
 }
