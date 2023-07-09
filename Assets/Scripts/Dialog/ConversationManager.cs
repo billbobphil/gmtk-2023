@@ -2,6 +2,7 @@
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using Util;
 
 namespace Dialog
@@ -17,6 +18,9 @@ namespace Dialog
         [SerializeField] private GameObject otherDialogBox;
         [SerializeField] private TextMeshProUGUI playerText;
         [SerializeField] private TextMeshProUGUI otherText;
+        [SerializeField] private TextMeshProUGUI playerNameText;
+        [SerializeField] private TextMeshProUGUI otherNameText;
+        [SerializeField] private Image otherPortrait;
 
         private void Awake()
         {
@@ -37,9 +41,9 @@ namespace Dialog
             otherDialogBox.SetActive(false);
             DisplayConversationStep();
             isConversatonActive = true;
-            Debug.Log("Starting conversation");
-            Debug.Log($"Actor: {currentConversation.GetConversationSequence()[conversationIndex].GetActor()}");
-            Debug.Log($"Message: {currentConversation.GetConversationSequence()[conversationIndex].GetMessage()}");
+            otherNameText.text = currentConversation.GetOtherName();
+            playerNameText.text = currentConversation.GetPlayerName();
+            otherPortrait.sprite = currentConversation.GetOtherPortrait();
         }
         
         private void Update()
