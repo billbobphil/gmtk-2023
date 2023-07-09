@@ -976,6 +976,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2434480537162313940, guid: ff900f8f781abe2499db15d8e9a99098, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2583864538517884922, guid: ff900f8f781abe2499db15d8e9a99098, type: 3}
       propertyPath: m_Name
       value: ConversationManager
