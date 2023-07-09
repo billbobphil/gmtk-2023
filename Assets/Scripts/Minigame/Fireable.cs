@@ -40,7 +40,7 @@ namespace Minigame
             mousePos.x = mousePos.x - objectPos.x;
             mousePos.y = mousePos.y - objectPos.y;
             Vector2 pos = new Vector2(mousePos.x, mousePos.y);
-            rigidbody2d.velocity = speed * 0.01f * pos;
+            rigidbody2d.velocity = speed * pos.normalized;
         }
         protected void ToggleObject(bool state)
         {
