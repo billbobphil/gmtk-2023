@@ -11,11 +11,12 @@ namespace Minigame
         public float speed = 5f;
         public Rigidbody2D rigidbody2d;
         public List<MonoBehaviour> disableList = new List<MonoBehaviour>();
-        private Renderer renderer;
+        private Renderer _renderer;
         private Vector2 originalPosition;
+        public Growable damage; // wouldve used interface type but unity doesnt like me
         private void Awake()
         {
-            renderer = GetComponent<Renderer>();
+            _renderer = GetComponent<Renderer>();
             originalPosition = new Vector2(transform.position.x, transform.position.y);
         }
 
@@ -26,7 +27,7 @@ namespace Minigame
                 Fire();
             }
             
-            if(!renderer.isVisible)
+            if(!_renderer.isVisible)
             {
                 ResetObject();
             }

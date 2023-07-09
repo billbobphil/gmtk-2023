@@ -13,15 +13,6 @@ namespace Movement
         private void OnDrawGizmos()
         {
             Gizmos.color = rayColor;
-            transforms = GetComponentsInChildren<Transform>();
-            paths.Clear();
-            foreach (Transform tsfrm in transforms)
-            {
-                if (tsfrm != this.transform)
-                {
-                    paths.Add(tsfrm);
-                }
-            }
 
             for (int i = 0; i < paths.Count; i++)
             {
