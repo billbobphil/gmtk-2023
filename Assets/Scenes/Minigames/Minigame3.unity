@@ -431,6 +431,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6838953451917127778, guid: 76a492e274798664b99597ba4024005f, type: 3}
+      propertyPath: sceneName
+      value: Overworld-3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838953451917127778, guid: 76a492e274798664b99597ba4024005f, type: 3}
       propertyPath: transition
       value: 
       objectReference: {fileID: 1903508740}
@@ -925,7 +929,7 @@ PrefabInstance:
     - target: {fileID: 6214584605167043979, guid: 7eabd700561a4df4481441579ed7da75, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 5920e63745d48d04fac92ef5590208cb, type: 3}
+      objectReference: {fileID: 21300000, guid: f32f78e2892db9341bc96a37b6753dec, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
