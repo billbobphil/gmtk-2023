@@ -268,7 +268,6 @@ GameObject:
   m_Component:
   - component: {fileID: 87258576}
   - component: {fileID: 87258575}
-  - component: {fileID: 87258577}
   m_Layer: 0
   m_Name: MusicPlayer
   m_TagString: Untagged
@@ -387,18 +386,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &87258577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 87258574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ddb584556ed6784b9f262c1c21dec9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &105625471
 GameObject:
   m_ObjectHideFlags: 0
@@ -1560,7 +1547,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 493536318}
         m_TargetAssemblyTypeName: Util.MenuNavigation, Assembly-CSharp
-        m_MethodName: GoToTutorial
+        m_MethodName: GoToOverworldZero
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2676,7 +2663,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 493536318}
         m_TargetAssemblyTypeName: Util.MenuNavigation, Assembly-CSharp
-        m_MethodName: GoToCredits
+        m_MethodName: GoToOverworldZero
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
