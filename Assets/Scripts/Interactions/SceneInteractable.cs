@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 namespace Interactions
 {
-    public class SceneInteractable : Interactable
+    public class SceneInteractable : InteractableWithNotice
     {
         public string sceneName;
         public Animator transition;
@@ -13,14 +13,6 @@ namespace Interactions
         protected override void RunInteraction()
         {
             StartCoroutine(LevelTransition(sceneName));
-        }
-
-        public override void MarkAsCurrentInteractable()
-        {
-        }
-
-        public override void UnMarkAsCurrentInteractable()
-        {
         }
 
         IEnumerator LevelTransition(string sceneName)
