@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Linq;
 using Interactions;
@@ -6,9 +7,11 @@ using Unity.VisualScripting;
 
 namespace Minigame
 {
-    public class Triggerable : InteractionController
+    public class Triggerable : InteractionController, IResetable
     {
         public int resetTimeSeconds = 3;
+        
+
         private void Update()
         {
             if(!_isInteracting && checkKeys())
@@ -40,6 +43,11 @@ namespace Minigame
         private void OnTriggerExit2D(Collider2D other)
         {
             _isTriggered = false;
+        }
+
+        public void ResetObject()
+        {
+            
         }
     }
 }
