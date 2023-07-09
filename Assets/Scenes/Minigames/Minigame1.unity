@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4519716716659756284, guid: 85ba5a4ce8dc2904a9d96fb8b5bc1154, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6934248326806556988, guid: 85ba5a4ce8dc2904a9d96fb8b5bc1154, type: 3}
       propertyPath: m_Name
       value: CircleWipe
