@@ -133,15 +133,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1926682050909710878, guid: 4f7d4982c6cab36459d0bf168dc66a77, type: 3}
       propertyPath: conversationSequence.Array.size
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1926682050909710878, guid: 4f7d4982c6cab36459d0bf168dc66a77, type: 3}
-      propertyPath: conversationSequence.Array.data[1].actor
+      propertyPath: conversationSequence.Array.data[0].actor
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1926682050909710878, guid: 4f7d4982c6cab36459d0bf168dc66a77, type: 3}
-      propertyPath: conversationSequence.Array.data[2].actor
+      propertyPath: conversationSequence.Array.data[1].actor
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1926682050909710878, guid: 4f7d4982c6cab36459d0bf168dc66a77, type: 3}
+      propertyPath: conversationSequence.Array.data[2].actor
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1926682050909710878, guid: 4f7d4982c6cab36459d0bf168dc66a77, type: 3}
       propertyPath: conversationSequence.Array.data[3].actor
@@ -157,23 +161,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1926682050909710878, guid: 4f7d4982c6cab36459d0bf168dc66a77, type: 3}
       propertyPath: conversationSequence.Array.data[0].message
-      value: Uh hi, I'm Travis.
+      value: 10-4 good buddy! Did I mention the cash prize last we chatted?
       objectReference: {fileID: 0}
     - target: {fileID: 1926682050909710878, guid: 4f7d4982c6cab36459d0bf168dc66a77, type: 3}
       propertyPath: conversationSequence.Array.data[1].message
-      value: Well hi there good buddy.
+      value: No, I assumed this was all for bragging rights.
       objectReference: {fileID: 0}
     - target: {fileID: 1926682050909710878, guid: 4f7d4982c6cab36459d0bf168dc66a77, type: 3}
       propertyPath: conversationSequence.Array.data[2].message
-      value: I want to sign up for the first round of the surf competition.
+      value: No heckin way friend! Winner takes home a big sack of cash today. Everyone
+        is on their A game.
       objectReference: {fileID: 0}
     - target: {fileID: 1926682050909710878, guid: 4f7d4982c6cab36459d0bf168dc66a77, type: 3}
       propertyPath: conversationSequence.Array.data[3].message
-      value: Awesome! The ocean has been a bit topsy-turvy.
+      value: Ocean included...
       objectReference: {fileID: 0}
     - target: {fileID: 1926682050909710878, guid: 4f7d4982c6cab36459d0bf168dc66a77, type: 3}
       propertyPath: conversationSequence.Array.data[4].message
-      value: Maybe she's a bit annoyed by the trash that's piling up.
+      value: Anyways, if you're ready for the next round go ahead and grab your surfboard
+        and catch some waves!
       objectReference: {fileID: 0}
     - target: {fileID: 1926682050909710878, guid: 4f7d4982c6cab36459d0bf168dc66a77, type: 3}
       propertyPath: conversationSequence.Array.data[5].message
@@ -185,11 +191,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4082600624385227383, guid: 4f7d4982c6cab36459d0bf168dc66a77, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7
+      value: 3.26
       objectReference: {fileID: 0}
     - target: {fileID: 4082600624385227383, guid: 4f7d4982c6cab36459d0bf168dc66a77, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 3.89
       objectReference: {fileID: 0}
     - target: {fileID: 4082600624385227383, guid: 4f7d4982c6cab36459d0bf168dc66a77, type: 3}
       propertyPath: m_LocalPosition.z
@@ -242,7 +248,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1087038595187617077, guid: 2bf1c070a8d570b41860063a792e1ff9, type: 3}
       propertyPath: conversationSequence.Array.size
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1087038595187617077, guid: 2bf1c070a8d570b41860063a792e1ff9, type: 3}
       propertyPath: conversationSequence.Array.data[0].actor
@@ -253,12 +259,38 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1087038595187617077, guid: 2bf1c070a8d570b41860063a792e1ff9, type: 3}
+      propertyPath: conversationSequence.Array.data[2].actor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087038595187617077, guid: 2bf1c070a8d570b41860063a792e1ff9, type: 3}
+      propertyPath: conversationSequence.Array.data[3].actor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087038595187617077, guid: 2bf1c070a8d570b41860063a792e1ff9, type: 3}
+      propertyPath: conversationSequence.Array.data[4].actor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087038595187617077, guid: 2bf1c070a8d570b41860063a792e1ff9, type: 3}
       propertyPath: conversationSequence.Array.data[0].message
-      value: Whoa, like bro, not while I'm talking to Stabitha.
+      value: Wh wh wh whoaaa dude. Look at all this fresh trash on the beach.
       objectReference: {fileID: 0}
     - target: {fileID: 1087038595187617077, guid: 2bf1c070a8d570b41860063a792e1ff9, type: 3}
       propertyPath: conversationSequence.Array.data[1].message
-      value: Whoa, y'know, Popcan looks lonely, go annoy him.
+      value: Whoa. The big waves in that last round must have pushed it all onto
+        shore.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087038595187617077, guid: 2bf1c070a8d570b41860063a792e1ff9, type: 3}
+      propertyPath: conversationSequence.Array.data[2].message
+      value: It did seem more violent than usual, I couldn't even stay on my board.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087038595187617077, guid: 2bf1c070a8d570b41860063a792e1ff9, type: 3}
+      propertyPath: conversationSequence.Array.data[3].message
+      value: Whoa, lame bro. Nothing I can't handle. That's why I'll win the cash
+        prize for this shindig.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087038595187617077, guid: 2bf1c070a8d570b41860063a792e1ff9, type: 3}
+      propertyPath: conversationSequence.Array.data[4].message
+      value: Whoa man I'm getting tired of this. I'll catch you in the next round.
       objectReference: {fileID: 0}
     - target: {fileID: 3242964925249813852, guid: 2bf1c070a8d570b41860063a792e1ff9, type: 3}
       propertyPath: m_RootOrder
@@ -266,11 +298,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3242964925249813852, guid: 2bf1c070a8d570b41860063a792e1ff9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6
+      value: 9.78
       objectReference: {fileID: 0}
     - target: {fileID: 3242964925249813852, guid: 2bf1c070a8d570b41860063a792e1ff9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: -0.35
       objectReference: {fileID: 0}
     - target: {fileID: 3242964925249813852, guid: 2bf1c070a8d570b41860063a792e1ff9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -338,7 +370,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266375866}
   m_LocalRotation: {x: 0, y: 0, z: -0.258819, w: 0.9659259}
-  m_LocalPosition: {x: -4.7655954, y: -4.900598, z: 0.106369644}
+  m_LocalPosition: {x: -4.21, y: -4.54, z: 0.106369644}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -706,7 +738,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679026269}
   m_LocalRotation: {x: 0, y: 0, z: 0.043619405, w: 0.9990483}
-  m_LocalPosition: {x: -3.9825797, y: -3.9825797, z: 0.106369644}
+  m_LocalPosition: {x: -4.02, y: -3.58, z: 0.106369644}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -856,7 +888,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 967717508}
   m_LocalRotation: {x: 0, y: 0, z: 0.5, w: 0.8660254}
-  m_LocalPosition: {x: 4.52259, y: -5.251605, z: 0.106369644}
+  m_LocalPosition: {x: 4.82, y: -4.54, z: 0.106369644}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1098,7 +1130,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140329863}
   m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
-  m_LocalPosition: {x: -0.79651594, y: -5.8456173, z: 0.106369644}
+  m_LocalPosition: {x: -1.04, y: -5.14, z: 0.106369644}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1167,7 +1199,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1887213804768511625, guid: df1d8a7e12f45904d8d2231f0b200496, type: 3}
       propertyPath: conversationSequence.Array.size
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1887213804768511625, guid: df1d8a7e12f45904d8d2231f0b200496, type: 3}
       propertyPath: conversationSequence.Array.data[0].actor
@@ -1175,15 +1207,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1887213804768511625, guid: df1d8a7e12f45904d8d2231f0b200496, type: 3}
       propertyPath: conversationSequence.Array.data[1].actor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887213804768511625, guid: df1d8a7e12f45904d8d2231f0b200496, type: 3}
+      propertyPath: conversationSequence.Array.data[2].actor
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1887213804768511625, guid: df1d8a7e12f45904d8d2231f0b200496, type: 3}
+      propertyPath: conversationSequence.Array.data[3].actor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887213804768511625, guid: df1d8a7e12f45904d8d2231f0b200496, type: 3}
+      propertyPath: conversationSequence.Array.data[4].actor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887213804768511625, guid: df1d8a7e12f45904d8d2231f0b200496, type: 3}
+      propertyPath: conversationSequence.Array.data[5].actor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887213804768511625, guid: df1d8a7e12f45904d8d2231f0b200496, type: 3}
+      propertyPath: conversationSequence.Array.data[6].actor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887213804768511625, guid: df1d8a7e12f45904d8d2231f0b200496, type: 3}
       propertyPath: conversationSequence.Array.data[0].message
-      value: Can you NOT see that I'm talking to Brett here!
+      value: Whoa, that was pretty wild out there, even for me.
       objectReference: {fileID: 0}
     - target: {fileID: 1887213804768511625, guid: df1d8a7e12f45904d8d2231f0b200496, type: 3}
       propertyPath: conversationSequence.Array.data[1].message
-      value: Go bother Popcan if you want to surf.
+      value: The ocean seemed almost angry.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887213804768511625, guid: df1d8a7e12f45904d8d2231f0b200496, type: 3}
+      propertyPath: conversationSequence.Array.data[2].message
+      value: You can say that again. I'm Stabitha by the way.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887213804768511625, guid: df1d8a7e12f45904d8d2231f0b200496, type: 3}
+      propertyPath: conversationSequence.Array.data[3].message
+      value: I'm going to win this competition, so you may as well give up now.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887213804768511625, guid: df1d8a7e12f45904d8d2231f0b200496, type: 3}
+      propertyPath: conversationSequence.Array.data[4].message
+      value: Unless Brett beats me again...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887213804768511625, guid: df1d8a7e12f45904d8d2231f0b200496, type: 3}
+      propertyPath: conversationSequence.Array.data[5].message
+      value: But it definitely WON'T be you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887213804768511625, guid: df1d8a7e12f45904d8d2231f0b200496, type: 3}
+      propertyPath: conversationSequence.Array.data[6].message
+      value: Scram kid.
       objectReference: {fileID: 0}
     - target: {fileID: 4045365279372089056, guid: df1d8a7e12f45904d8d2231f0b200496, type: 3}
       propertyPath: m_RootOrder
@@ -1191,11 +1263,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4045365279372089056, guid: df1d8a7e12f45904d8d2231f0b200496, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7
+      value: -2.4
       objectReference: {fileID: 0}
     - target: {fileID: 4045365279372089056, guid: df1d8a7e12f45904d8d2231f0b200496, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 3.05
       objectReference: {fileID: 0}
     - target: {fileID: 4045365279372089056, guid: df1d8a7e12f45904d8d2231f0b200496, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1421,7 +1493,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711985194}
   m_LocalRotation: {x: 0, y: -0, z: 0.6691308, w: -0.7431447}
-  m_LocalPosition: {x: 10.813717, y: -3.3345668, z: 0.106369644}
+  m_LocalPosition: {x: 10.62, y: -1.47, z: 0.106369644}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1566,7 +1638,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820309289}
   m_LocalRotation: {x: 0, y: 0, z: 0.19936788, w: 0.97992474}
-  m_LocalPosition: {x: 10.408709, y: -5.1436033, z: 0.106369644}
+  m_LocalPosition: {x: 10.16, y: -4.55, z: 0.106369644}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1692,7 +1764,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844766828}
   m_LocalRotation: {x: 0, y: -0, z: 0.99813485, w: -0.061048422}
-  m_LocalPosition: {x: -8.05966, y: -4.2525854, z: 0.106369644}
+  m_LocalPosition: {x: -8.12, y: -3.73, z: 0.106369644}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1776,7 +1848,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1942902914}
   m_LocalRotation: {x: 0, y: 0, z: -0.13052624, w: 0.9914449}
-  m_LocalPosition: {x: 0.36450732, y: -3.8205767, z: 0.106369644}
+  m_LocalPosition: {x: 1.55, y: 0.62, z: 0.106369644}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1860,7 +1932,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1943214677}
   m_LocalRotation: {x: 0, y: 0, z: 0.13052616, w: 0.9914449}
-  m_LocalPosition: {x: -8.788675, y: -3.4695694, z: 0.106369644}
+  m_LocalPosition: {x: -8.99, y: -0.65, z: 0.106369644}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1944,7 +2016,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006398299}
   m_LocalRotation: {x: 0, y: 0, z: -0.21643952, w: 0.97629607}
-  m_LocalPosition: {x: 1.9035381, y: -5.3056064, z: 0.106369644}
+  m_LocalPosition: {x: 2.21, y: -4.66, z: 0.106369644}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2096,7 +2168,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068584431}
   m_LocalRotation: {x: 0, y: 0, z: -0.75470966, w: 0.656059}
-  m_LocalPosition: {x: 7.4116483, y: -5.4676094, z: 0.106369644}
+  m_LocalPosition: {x: 7.62, y: -4.02, z: 0.106369644}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2234,11 +2306,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2651302120782581341, guid: 74fed20953fa33147816e112740e9773, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9
+      value: -5.81
       objectReference: {fileID: 0}
     - target: {fileID: 2651302120782581341, guid: 74fed20953fa33147816e112740e9773, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 3.21
       objectReference: {fileID: 0}
     - target: {fileID: 2651302120782581341, guid: 74fed20953fa33147816e112740e9773, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2274,7 +2346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6255496662931980726, guid: 74fed20953fa33147816e112740e9773, type: 3}
       propertyPath: sceneName
-      value: Minigame1
+      value: Minigame2
       objectReference: {fileID: 0}
     - target: {fileID: 6255496662931980726, guid: 74fed20953fa33147816e112740e9773, type: 3}
       propertyPath: transition

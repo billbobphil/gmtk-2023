@@ -15,6 +15,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Overworld/Overworld-0.unity
     guid: a3c98ccc660618b4380361efa3dc72e9
   - enabled: 1
+    path: Assets/Scenes/Overworld/Overworld-1.unity
+    guid: d6eefff42e8c5344a9325fa46a265caa
+  - enabled: 1
+    path: Assets/Scenes/Overworld/Overworld-2.unity
+    guid: 7992068f4aa648c4ca9440dc4193a0d3
+  - enabled: 1
+    path: Assets/Scenes/Overworld/Overworld-3.unity
+    guid: e64158a85fd5d1d42baf158f3fbebe9a
+  - enabled: 1
     path: Assets/Scenes/Minigames/Minigame1.unity
     guid: c32baca9c1a815e44933f6dc590ff707
   - enabled: 1

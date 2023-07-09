@@ -184,6 +184,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85ba5a4ce8dc2904a9d96fb8b5bc1154, type: 3}
+--- !u!95 &134622616 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2925684025086163340, guid: 85ba5a4ce8dc2904a9d96fb8b5bc1154, type: 3}
+  m_PrefabInstance: {fileID: 134622615}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &172415592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -476,6 +481,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6838953451917127778, guid: 76a492e274798664b99597ba4024005f, type: 3}
+      propertyPath: sceneName
+      value: Overworld-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838953451917127778, guid: 76a492e274798664b99597ba4024005f, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 134622616}
     - target: {fileID: 6838953451917127778, guid: 76a492e274798664b99597ba4024005f, type: 3}
       propertyPath: toDestroy.Array.size
       value: 3
