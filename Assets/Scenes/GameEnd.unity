@@ -4431,7 +4431,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Torrential Tide
+  m_text: Torrential Tides of Trash
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 72af3eebe1b452f45ac0e3b18785ea83, type: 2}
   m_sharedMaterial: {fileID: -4516375359950902791, guid: 72af3eebe1b452f45ac0e3b18785ea83, type: 2}
@@ -4516,6 +4516,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4519716716659756284, guid: 85ba5a4ce8dc2904a9d96fb8b5bc1154, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6934248326806556988, guid: 85ba5a4ce8dc2904a9d96fb8b5bc1154, type: 3}
       propertyPath: m_Name
       value: CircleWipe
