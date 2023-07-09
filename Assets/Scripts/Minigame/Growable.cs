@@ -9,12 +9,14 @@ namespace Minigame
     {
         public Vector3 scaleChange = new Vector3(0.5f, 0.5f, 0.5f);
         private int currentDamage = 0;
-        [SerializeField] private int damageBonus = 1; 
+        [SerializeField] private int damageBonus = 1;
+        public AudioSource audioSource;
 
         protected override void Trigger()
         {
             transform.localScale += scaleChange;
             currentDamage += damageBonus;
+            audioSource.Play();
         }
 
         public void ResetObject()
